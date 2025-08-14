@@ -1,64 +1,65 @@
-````markdown
 # Automatic Stock Counter
 
-**Automatic Stock Counter** merupakan projek tugasan akhir (FYP) yang automasi kaedah pengiraan stok menggunakan elektronik (microcontroller ESP-IDF) serta antaramuka pengguna yang mudah digunakan.
+**Automatic Stock Counter** is a Final Year Project (FYP) that automates the stock counting process using electronics (ESP-IDF microcontroller) with a simple user interface.
 
-## Ciri Utama
-- Mengesan dan mengira stok secara automatik.
-- Dibangunkan menggunakan **ESP-IDF**, **C**, dan **CMake**.
-- Struktur modular (komponen disusun mengikut direktori `/components` dan `/main`).
-- Sesuai untuk integrasi sistem IoT atau automasi inventori.
+## Key Features
+- Automatically detects and counts stock  
+- Developed using **ESP-IDF**, **C**, and **CMake**  
+- Modular structure (components organized under `/components` and `/main`)  
+- Suitable for IoT system integration or inventory automation  
 
-## Struktur Projek
+## Project Structure
 ```text
-├── components/           # Modul dan pustaka perincian
-├── main/                 # Kod utama projek
-├── CMakeLists.txt        # Konfigurasi binaan projek
-├── sdkconfig             # Tetapan SDK ESP-IDF
-└── README.md             # Fail dokumentasi ini
-````
+├── components/           # Modules and libraries
+├── main/                 # Main project source code
+├── CMakeLists.txt        # Project build configuration
+├── sdkconfig             # ESP-IDF configuration file
+└── README.md             # Project documentation
+Preparation & How to Build
+Install ESP-IDF and set up the recommended development environment.
 
-## Preparation & How to Build
+Clone this repository:
 
-1. Pasang **ESP-IDF** dan persediaan persekitaran pembangunan seperti yang disyorkan.
-2. Klon repositori ke mesin anda:
+bash
+Copy code
+git clone https://github.com/MuhammadAqill/AUTOMATIC_STOCK_COUNTER.git
+Navigate to the project directory:
 
-   ```bash
-   git clone https://github.com/MuhammadAqill/AUTOMATIC_STOCK_COUNTER.git
-   ```
-3. Masuk ke direktori projek:
+bash
+Copy code
+cd AUTOMATIC_STOCK_COUNTER
+Build and flash the firmware to the ESP board:
 
-   ```bash
-   cd AUTOMATIC_STOCK_COUNTER
-   ```
-4. Jalankan perintah berikut untuk bina dan muat naik ke peranti ESP:
+bash
+Copy code
+idf.py build
+idf.py -p (PORT_SERIAL) flash monitor
+Usage
+Deploy the project to the ESP board with connections to:
 
-   ```bash
-   idf.py build
-   idf.py -p (PORT_SERIAL) flash monitor
-   ```
+Parent board
 
-## Cara Penggunaan
+Stock sensor (e.g., object counter sensor)
 
-1. Pasang projek ke papan ESP menyambungkan ke:
+Run the firmware; the board will start counting stock automatically.
 
-   * Parent board
-   * Sensor stok (contoh: sensor pembilang objek)
-2. Jalankan firmware; papan akan mula mengira stok secara automatik.
-3. Monitor output serial bagi:
+Monitor the serial output for:
 
-   * Status semasa pengiraan stok
-   * Notifikasi jika stok mencapai had tertentu
+Current stock counting status
 
-## Penambahbaikan Cadangan (Roadmap)
+Notifications when stock reaches a threshold
 
-* Tambahkan sokongan **Wi-Fi/MQTT** untuk menghantar data stok ke pelayan jauh.
-* Cipta **antaramuka pengguna web** atau aplikasi mudah alih untuk akses real-time.
-* Pelbagaikan jenis sensor disokong (contoh: RFID, IR, ultrasonik).
-* Log data pengiraan stok ke **SD Card** atau storan awan.
-* Integrasi dengan sistem ERP untuk automasi pesanan.
+Suggested Improvements (Roadmap)
+Add Wi-Fi/MQTT support for remote stock data transmission
 
-## Penulis
+Create a web interface or mobile app for real-time access
 
-**Muhammad Aqil**
-Projek FYP ini dikembangkan pada tahun 2025.
+Support more sensor types (e.g., RFID, IR, ultrasonic)
+
+Log stock count data to SD Card or cloud storage
+
+Integrate with ERP systems for automated ordering
+
+Author
+Muhammad Aqil
+This FYP project was developed in 2025.
