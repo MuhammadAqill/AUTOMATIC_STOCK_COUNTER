@@ -1,3 +1,4 @@
+````markdown
 # Automatic Stock Counter
 
 **Automatic Stock Counter** is a Final Year Project (FYP) that automates the stock counting process using electronics (ESP-IDF microcontroller) with a simple user interface.
@@ -15,51 +16,49 @@
 ├── CMakeLists.txt        # Project build configuration
 ├── sdkconfig             # ESP-IDF configuration file
 └── README.md             # Project documentation
-Preparation & How to Build
-Install ESP-IDF and set up the recommended development environment.
+````
 
-Clone this repository:
+## Preparation & How to Build
 
-bash
-Copy code
-git clone https://github.com/MuhammadAqill/AUTOMATIC_STOCK_COUNTER.git
-Navigate to the project directory:
+1. Install **ESP-IDF** and set up the recommended development environment.
+2. Clone this repository:
 
-bash
-Copy code
-cd AUTOMATIC_STOCK_COUNTER
-Build and flash the firmware to the ESP board:
+   ```bash
+   git clone https://github.com/MuhammadAqill/AUTOMATIC_STOCK_COUNTER.git
+   ```
+3. Navigate to the project directory:
 
-bash
-Copy code
-idf.py build
-idf.py -p (PORT_SERIAL) flash monitor
-Usage
-Deploy the project to the ESP board with connections to:
+   ```bash
+   cd AUTOMATIC_STOCK_COUNTER
+   ```
+4. Build and flash the firmware to the ESP board:
 
-Parent board
+   ```bash
+   idf.py build
+   idf.py -p (PORT_SERIAL) flash monitor
+   ```
 
-Stock sensor (e.g., object counter sensor)
+## Usage
 
-Run the firmware; the board will start counting stock automatically.
+1. Deploy the project to the ESP board with connections to:
 
-Monitor the serial output for:
+   * Parent board
+   * Stock sensor (e.g., object counter sensor)
+2. Run the firmware; the board will start counting stock automatically.
+3. Monitor the serial output for:
 
-Current stock counting status
+   * Current stock counting status
+   * Notifications when stock reaches a threshold
 
-Notifications when stock reaches a threshold
+## Suggested Improvements (Roadmap)
 
-Suggested Improvements (Roadmap)
-Add Wi-Fi/MQTT support for remote stock data transmission
+* Add **Wi-Fi/MQTT** support for remote stock data transmission
+* Create a **web interface** or mobile app for real-time access
+* Support more sensor types (e.g., RFID, IR, ultrasonic)
+* Log stock count data to **SD Card** or cloud storage
+* Integrate with ERP systems for automated ordering
 
-Create a web interface or mobile app for real-time access
+## Author
 
-Support more sensor types (e.g., RFID, IR, ultrasonic)
-
-Log stock count data to SD Card or cloud storage
-
-Integrate with ERP systems for automated ordering
-
-Author
-Muhammad Aqil
+**Muhammad Aqil**
 This FYP project was developed in 2025.
