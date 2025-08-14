@@ -1,32 +1,34 @@
-# _Sample project_
+````markdown
+# Automatic Stock Counter
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+This project is an **Automatic Stock Counter** developed using **ESP-IDF** and C.  
+It automates stock counting with sensors and a microcontroller.
 
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
+## Features
+- Automatic stock detection and counting  
+- Built with **ESP-IDF**, **C**, and **CMake**  
+- Modular project structure  
 
+## How to Build
+1. Install the **ESP-IDF** environment.  
+2. Clone this repository:  
+   ```bash
+   git clone https://github.com/MuhammadAqill/AUTOMATIC_STOCK_COUNTER.git
+   cd AUTOMATIC_STOCK_COUNTER
+````
 
+3. Build and flash to the ESP board:
 
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
+   ```bash
+   idf.py build
+   idf.py -p (PORT) flash monitor
+   ```
 
-## Example folder contents
+## Author
 
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
-files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
-
-Below is short explanation of remaining files in the project folder.
+Developed by **Muhammad Aqil** (FYP Project 2025)
 
 ```
-├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   └── main.c
-└── README.md                  This is the file you are currently reading
+
+Do you want me to also make a **one-line project description** (short tagline) so it looks more professional at the top of the README?
 ```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
