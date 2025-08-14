@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../esp/esp-idf"
+		},
+		{
+			"path": "../../02_Hello_World"
+		},
+		{
+			"path": "../../hello_world"
+		},
+		{
+			"path": "../../test"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c",
+			"ets_sys.h": "c",
+			"inttypes.h": "c",
+			"array": "cpp",
+			"bitset": "cpp",
+			"string_view": "cpp",
+			"format": "cpp",
+			"initializer_list": "cpp",
+			"ranges": "cpp",
+			"span": "cpp",
+			"regex": "cpp",
+			"algorithm": "cpp",
+			"math.h": "c",
+			"hd44780.h": "c",
+			"esp_system.h": "c",
+			"compare": "cpp",
+			"cstdint": "cpp",
+			"freertos.h": "c",
+			"i2c.h": "c"
+			
+		}
+	}
+}
