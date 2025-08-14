@@ -1,9 +1,3 @@
-   Terima kasih! Saya telah membuka repositori GitHub anda untuk projek **AUTOMATIC\_STOCK\_COUNTER**. Saya dapati ia adalah projek FYP dengan struktur yang menggunakan C dan CMake ([GitHub][1]).
-
-Berikut ialah cadangan **README.md** yang formal, informatif, dan sesuai untuk dokumentasi projek anda:
-
----
-
 ````markdown
 # Automatic Stock Counter
 
@@ -24,7 +18,7 @@ Berikut ialah cadangan **README.md** yang formal, informatif, dan sesuai untuk d
 └── README.md             # Fail dokumentasi ini
 ````
 
-## Persediaan & Cara Bina
+## Preparation & How to Build
 
 1. Pasang **ESP-IDF** dan persediaan persekitaran pembangunan seperti yang disyorkan.
 2. Klon repositori ke mesin anda:
@@ -68,21 +62,3 @@ Berikut ialah cadangan **README.md** yang formal, informatif, dan sesuai untuk d
 
 **Muhammad Aqil**
 Projek FYP ini dikembangkan pada tahun 2025.
-
----
-
-```
-
----
-
-### Kenapa README ini dijangka sesuai:
-- Memberikan gambaran ringkas dan padat (ringkasan, ciri utama, struktur fail).
-- Panduan langkah demi langkah untuk bina dan jalankan.
-- Bahagian “Roadmap” menunjukkan visi projek serta potensi buat masa hadapan.
-- Format jelas untuk pemaju lain atau penilai projek memahami tujuan dan capaian.
-
-Kalau anda mahu tambahkan perkara seperti contoh output, simbol penggunaan spesifik, atau gambarajah rangkaian—beritahu saja, saya boleh bantu sediakan juga!
-::contentReference[oaicite:1]{index=1}
-```
-
-[1]: https://github.com/MuhammadAqill/AUTOMATIC_STOCK_COUNTER "GitHub - MuhammadAqill/AUTOMATIC_STOCK_COUNTER: my fyp project"
