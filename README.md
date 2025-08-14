@@ -1,5 +1,5 @@
 ````markdown
-# Automatic Stock Counter
+## Automatic Stock Counter
 
 **Automatic Stock Counter** is a Final Year Project (FYP) that automates the stock counting process using electronics (ESP-IDF microcontroller) with a simple user interface.
 
