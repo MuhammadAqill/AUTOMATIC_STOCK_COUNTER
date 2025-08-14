@@ -27,8 +27,3 @@ It automates stock counting with sensors and a microcontroller.
 ## Author
 
 Developed by **Muhammad Aqil** (FYP Project 2025)
-
-```
-
-Do you want me to also make a **one-line project description** (short tagline) so it looks more professional at the top of the README?
-```
