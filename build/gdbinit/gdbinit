@@ -1,0 +1,2 @@
+source /home/akira/AUTOMATIC_STOCK_COUNTER/build/gdbinit/symbols
+source /home/akira/AUTOMATIC_STOCK_COUNTER/build/gdbinit/connect
