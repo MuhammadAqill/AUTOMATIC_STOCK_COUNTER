@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "Automatic-Stock-Counter-v3",
-    "project_version":    "66d3382-dirty",
+    "project_version":    "247ec92-dirty",
     "project_path":       "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER",
     "idf_path":           "/home/akira/esp/esp-idf",
     "build_dir":          "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build",
