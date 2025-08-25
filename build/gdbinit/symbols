@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file /home/akira/AUTOMATIC_STOCK_COUNTER/build/bootloader/bootloader.elf
+    add-symbol-file /home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file /home/akira/AUTOMATIC_STOCK_COUNTER/build/Automatic-Stock-Counter-v3.elf
+file /home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/Automatic-Stock-Counter-v3.elf

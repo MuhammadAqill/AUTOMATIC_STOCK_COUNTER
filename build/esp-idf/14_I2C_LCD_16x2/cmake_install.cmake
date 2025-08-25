@@ -1,4 +1,4 @@
-# Install script for directory: /home/akira/AUTOMATIC_STOCK_COUNTER/components/14_I2C_LCD_16x2
+# Install script for directory: /home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/components/14_I2C_LCD_16x2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/akira/AUTOMATIC_STOCK_COUNTER/build/esp-idf/14_I2C_LCD_16x2/install_local_manifest.txt"
+  file(WRITE "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/esp-idf/14_I2C_LCD_16x2/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

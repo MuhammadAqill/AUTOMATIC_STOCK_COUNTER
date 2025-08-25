@@ -2,13 +2,13 @@ menu "Example Configuration"
 
     config ESP_WIFI_SSID
         string "WiFi SSID"
-        default "AYAM2.4G"
+        default "AYAM2.4G_BOLELAH"
         help
             SSID (network name) for the example to connect to.
 
     config ESP_WIFI_PASSWORD
         string "WiFi Password"
-        default "memensem"
+        default "fawwaznakayam"
         help
             WiFi password (WPA or WPA2) for the example to use.
 

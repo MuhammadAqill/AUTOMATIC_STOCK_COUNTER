@@ -10,18 +10,18 @@ if(NOT EXISTS "/home/akira/esp/esp-idf/components/bootloader/subproject")
   file(MAKE_DIRECTORY "/home/akira/esp/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/home/akira/AUTOMATIC_STOCK_COUNTER/build/bootloader"
-  "/home/akira/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix"
-  "/home/akira/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/tmp"
-  "/home/akira/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/akira/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src"
-  "/home/akira/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader"
+  "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix"
+  "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/tmp"
+  "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src"
+  "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/akira/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/akira/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
