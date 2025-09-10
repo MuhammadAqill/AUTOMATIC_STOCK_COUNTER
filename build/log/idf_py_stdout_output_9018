@@ -1,0 +1,255 @@
+Command: /home/akira/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/akira/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/Automatic-Stock-Counter-v3.elf /home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader/bootloader.elf -m '/home/akira/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/akira/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 25 2025 10:03:56[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1d204h (119300) map[0m
+[0;32mI (129) esp_image: segment 1: paddr=0002d22c vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002d254 vaddr=3ffb0000 size=02dc4h ( 11716) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=9154ch (595276) map[0m
+[0;32mI (343) esp_image: segment 4: paddr=000c1574 vaddr=3ffb2dc4 size=01164h (  4452) load[0m
+[0;32mI (345) esp_image: segment 5: paddr=000c26e0 vaddr=40080000 size=192d4h (103124) load[0m
+[0;32mI (400) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (400) boot: Disabling RNG early entropy source...[0m
+[0;32mI (410) cpu_start: Multicore app[0m
+[0;32mI (418) cpu_start: Pro cpu start user code[0m
+[0;32mI (419) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (419) app_init: Application information:[0m
+[0;32mI (419) app_init: Project name:     Automatic-Stock-Counter-v3[0m
+[0;32mI (424) app_init: App version:      071dfcd-dirty[0m
+[0;32mI (429) app_init: Compile time:     Sep 10 2025 14:05:03[0m
+[0;32mI (434) app_init: ELF file SHA256:  6d5f5a9ae...[0m
+[0;32mI (438) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (442) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (446) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (450) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (454) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (465) heap_init: At 3FFB8038 len 00027FC8 (159 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (476) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 400992D4 len 00006D2C (27 KiB): IRAM[0m
+[0;33mW (488) spi_flash: boya detected but related driver is not linked, please check option `SPI_FLASH_SUPPORT_BOYA_CHIP`[0m
+[0;32mI (497) spi_flash: detected chip: generic[0m
+[0;32mI (500) spi_flash: flash io: dio[0m
+[0;33mW (503) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (516) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (526) main_task: Started on CPU0[0m
+[0;32mI (536) main_task: Calling app_main()[0m
+[0;32mI (576) wifi:wifi driver task: 3ffc0094, prio:23, stack:6656, core=0[0m
+[0;32mI (586) wifi:wifi firmware version: f3dbad7[0m
+[0;32mI (586) wifi:wifi certification version: v7.0[0m
+[0;32mI (596) wifi:config NVS flash: enabled[0m
+[0;32mI (596) wifi:config nano formatting: disabled[0m
+[0;32mI (596) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (596) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (606) wifi:Init management short buffer num: 32[0m
+[0;32mI (606) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (616) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (616) wifi:Init static rx buffer num: 10[0m
+[0;32mI (616) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (626) wifi_init: rx ba win: 6[0m
+[0;32mI (626) wifi_init: accept mbox: 6[0m
+[0;32mI (626) wifi_init: tcpip mbox: 32[0m
+[0;32mI (636) wifi_init: udp mbox: 6[0m
+[0;32mI (636) wifi_init: tcp mbox: 6[0m
+[0;32mI (636) wifi_init: tcp tx win: 5760[0m
+[0;32mI (646) wifi_init: tcp rx win: 5760[0m
+[0;32mI (646) wifi_init: tcp mss: 1440[0m
+[0;32mI (646) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (656) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (656) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (666) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (746) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (836) wifi:mode : sta (cc:db:a7:3e:ce:44)[0m
+[0;32mI (836) wifi:enable tsf[0m
+[0;32mI (946) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (946) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (956) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (966) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1016) wifi:connected with Redmi 9C, aid = 1, channel 13, BW20, bssid = 86:2c:5b:54:ab:04[0m
+[0;32mI (1016) wifi:security: WPA2-PSK, phy: bgn, rssi: -31[0m
+[0;32mI (1026) wifi:pm start, type: 1[0m
+
+[0;32mI (1026) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1046) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1046) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2096) esp_netif_handlers: sta ip: 192.168.43.158, mask: 255.255.255.0, gw: 192.168.43.1[0m
+✅ Got IP: 192.168.43.158
+📡 IP Address (manual fetch): 192.168.43.158
+Raw Offset : 5848 | Gram : -45.24
+ Raw Offset : 5834 | Gram : -45.13
+ Raw Offset : 5852 | Gram : -45.27
+ Raw Offset : 5776 | Gram : -44.68
+ Raw Offset : 5855 | Gram : -45.29
+ Raw Offset : 5754 | Gram : -44.51
+ Raw Offset : 5820 | Gram : -45.02
+ Raw Offset : 5748 | Gram : -44.47
+ Raw Offset : 5790 | Gram : -44.79
+ Raw Offset : 5885 | Gram : -45.52
+ Raw Offset : 5793 | Gram : -44.81
+ Raw Offset : 5799 | Gram : -44.86
+ Raw Offset : 5770 | Gram : -44.64
+ Raw Offset : 5772 | Gram : -44.65
+ Raw Offset : 5846 | Gram : -45.22
+ Raw Offset : 5829 | Gram : -45.09
+ Raw Offset : 5800 | Gram : -44.87
+ Raw Offset : 5878 | Gram : -45.47
+ Raw Offset : 5890 | Gram : -45.56
+ Raw Offset : 5839 | Gram : -45.17
+ -----------------------------------------------
+Total : 116378
+Average : 5818
+-----------------------------------------------
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 0
+Raw_Pressure : 6051 | Pressure : -233 | Gram : 1.80
+Raw_Pressure : 6044 | Pressure : -226 | Gram : 1.75
+Raw_Pressure : 6031 | Pressure : -213 | Gram : 1.65
+Raw_Pressure : 6020 | Pressure : -202 | Gram : 1.56
+Raw_Pressure : 5973 | Pressure : -155 | Gram : 1.20
+Raw_Pressure : 6041 | Pressure : -223 | Gram : 1.73
+Raw_Pressure : 5973 | Pressure : -155 | Gram : 1.20
+Raw_Pressure : 6018 | Pressure : -200 | Gram : 1.55
+Raw_Pressure : 6108 | Pressure : -290 | Gram : 2.24
+Raw_Pressure : 6003 | Pressure : -185 | Gram : 1.43
+Raw_Pressure : 6008 | Pressure : -190 | Gram : 1.47
+Raw_Pressure : 6021 | Pressure : -203 | Gram : 1.57
+Raw_Pressure : 5983 | Pressure : -165 | Gram : 1.28
+Raw_Pressure : 6014 | Pressure : -196 | Gram : 1.52
+Raw_Pressure : 5990 | Pressure : -172 | Gram : 1.33
+Raw_Pressure : 5936 | Pressure : -118 | Gram : 0.91
+Raw_Pressure : 6030 | Pressure : -212 | Gram : 1.64
+Raw_Pressure : 6056 | Pressure : -238 | Gram : 1.84
+Raw_Pressure : 6023 | Pressure : -205 | Gram : 1.59
+Raw_Pressure : 5976 | Pressure : -158 | Gram : 1.22
+-----------------------------------------------
+Total : 120299
+Average : 6014
+Average Component :   1.523556
+-----------------------------------------------
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 0
+Raw_Pressure : 6672 | Pressure : 854 | Gram : 6.67
+Raw_Pressure : 6669 | Pressure : 851 | Gram : 6.64
+Raw_Pressure : 6655 | Pressure : 837 | Gram : 6.53
+Raw_Pressure : 6566 | Pressure : 748 | Gram : 5.84
+Raw_Pressure : 6694 | Pressure : 876 | Gram : 6.84
+Raw_Pressure : 6667 | Pressure : 849 | Gram : 6.63
+Raw_Pressure : 6647 | Pressure : 829 | Gram : 6.47
+Raw_Pressure : 6591 | Pressure : 773 | Gram : 6.04
+Raw_Pressure : 6537 | Pressure : 719 | Gram : 5.61
+Raw_Pressure : 6564 | Pressure : 746 | Gram : 5.82
+Raw_Pressure : 6663 | Pressure : 845 | Gram : 6.60
+Raw_Pressure : 6571 | Pressure : 753 | Gram : 5.88
+Raw_Pressure : 6670 | Pressure : 852 | Gram : 6.65
+Raw_Pressure : 6655 | Pressure : 837 | Gram : 6.53
+Raw_Pressure : 6608 | Pressure : 790 | Gram : 6.17
+Raw_Pressure : 6611 | Pressure : 793 | Gram : 6.19
+Raw_Pressure : 6582 | Pressure : 764 | Gram : 5.96
+Raw_Pressure : 6609 | Pressure : 791 | Gram : 6.18
+Raw_Pressure : 6635 | Pressure : 817 | Gram : 6.38
+Raw_Pressure : 6612 | Pressure : 794 | Gram : 6.20
+-----------------------------------------------
+Total : 132478
+Average : 6623
+Average Components :  6.291863
+-----------------------------------------------
+n : 4 | current_pressure : 805 | component_raw_weight : 196
+805 >= 708 && 805 <= 860 
+Components in analog : 4
+Conponents in weight : 4
+805 >= 708 && 805 <= 860 
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
+Button State : 1
