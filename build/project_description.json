@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "Automatic-Stock-Counter-v3",
-    "project_version":    "247ec92-dirty",
+    "project_version":    "34803f3-dirty",
     "project_path":       "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER",
     "idf_path":           "/home/akira/esp/esp-idf",
     "build_dir":          "/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build",
@@ -11,7 +11,7 @@
     "app_elf":            "Automatic-Stock-Counter-v3.elf",
     "app_bin":            "Automatic-Stock-Counter-v3.bin",
     "build_type":         "flash_app",
-    "git_revision":       "v5.5",
+    "git_revision":       "v5.5-dirty",
     "target":             "esp32",
     "rev":                "0",
     "min_rev":            "0",
