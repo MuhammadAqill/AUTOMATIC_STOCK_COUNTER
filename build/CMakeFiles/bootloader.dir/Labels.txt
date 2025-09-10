@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/CMakeFiles/bootloader
+/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/CMakeFiles/bootloader.rule
+/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/CMakeFiles/bootloader-complete.rule
+/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

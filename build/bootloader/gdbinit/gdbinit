@@ -1,0 +1,2 @@
+source /home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader/gdbinit/symbols
+source /home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader/gdbinit/connect

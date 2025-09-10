@@ -297,8 +297,8 @@ void app_main(void) {
 
     wifi_config_t wifi_config = {
         .sta = {
-            .ssid = "AYAM2.4G",
-            .password = "memensem",
+            .ssid = "Redmi 9C",
+            .password = "aqilsem#",
         },
     };
 
