@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file /home/akira/Desktop/AUTOMATIC_STOCK_COUNTER/build/bootloader/bootloader.elf
+file /home/akira/Programming/AUTOMATIC_STOCK_COUNTER/build/bootloader/bootloader.elf

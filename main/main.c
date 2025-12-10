@@ -1,3 +1,31 @@
+/*
+*                     !!!!!!!!! READ THIS !!!!!!!!!!!
+*
+* Project: Automatic Component Weight & Stock Counter System
+* Description:
+*  This program reads weight data from the ADS1232 load cell
+*  amplifier and processes the measurements to determine
+*  component quantity. It also provides a web interface for
+*  real-time monitoring using ESP32.
+*
+* License:
+* This software is released for educational and non commercial use.
+* You are free to modify, distribute, and use this code
+*
+* Provided that:
+*  1. Proper credit is given to the original author.
+*  2. This notice remains intact in all copies or
+*     modifications.
+*  3. The software is provided "as-is" without warranty of
+*     any kind.
+*
+* Author: MUHAMMAD AQIL BIN MUHAMMAD SHAHRIL
+* Date: 24 August 2025
+* project:
+* https://github.com/MuhammadAqill/AUTOMATIC_STOCK_COUNTER.git
+*
+*/
+
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -297,14 +325,17 @@ void app_main(void) {
 
     wifi_config_t wifi_config = {
         .sta = {
-            .ssid = "Redmi 9C",
-            .password = "aqilsem#",
+            .ssid = "itik", // Redmi 9C
+            .password = "cucutimah", // aqilsem#
         },
     };
 
     esp_wifi_set_mode(WIFI_MODE_STA);
     esp_wifi_set_config(WIFI_IF_STA, &wifi_config);
     esp_wifi_start();
+
+
+
 
     xEventGroupWaitBits(wifi_event_group,
                         CONNECTED_BIT,
@@ -386,15 +417,15 @@ void app_main(void) {
                 raw_pressure[i] = ads1232_read_raw();
                 total_raw_pressure += raw_pressure[i];
                 int32_t pressure_value = average_raw_offset - raw_pressure[i];
-                // float scale = 100.00 / pressure_value;
-                gram_pressure[i] = pressure_value * -0.00773575;
+                float scale = 100.00 / pressure_value;
+                gram_pressure[i] = pressure_value * -0.0076017;
                 total_component += gram_pressure[i];
                 web_raw_calibration = gram_pressure[i];
                 check_reset_button();
                 vTaskDelay(pdMS_TO_TICKS(10));
                 calibrate(buffer, sizeof(buffer), i, gram_pressure, "               ");
-                printf("Raw_Pressure : %" PRId32 " | Pressure : %" PRId32 " | Gram : %.2f\n", raw_pressure[i], pressure_value, gram_pressure[i]);
-                // printf("Raw_Pressure : %" PRId32 " | Pressure : %" PRId32 "| Scale : %f\n", raw_pressure[i], pressure_value, scale);
+                // printf("Raw_Pressure : %" PRId32 " | Pressure : %" PRId32 " | Gram : %.2f\n", raw_pressure[i], pressure_value, gram_pressure[i]);
+                printf("Raw_Pressure : %" PRId32 " | Pressure : %" PRId32 "| Scale : %f\n", raw_pressure[i], pressure_value, scale);
                 running = false;
             }
 
